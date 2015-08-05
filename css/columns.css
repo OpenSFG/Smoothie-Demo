@@ -1,0 +1,101 @@
+/*------------------------------------*\
+	#OVERRIDE STYLES
+	This style sheet can be used for two different functions:
+	1. Override specific Bootstrap styles.
+	2. Add your own styles.
+\*------------------------------------*/
+
+/*	splits up the page horizontally. 
+	Need a few of these to break up the content.
+	Can be used inside your main wrapper, or within other divs.	*/
+/*	SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* 	Divides the section into columns. 
+	Each column has a left margin except the first one. 
+	Using .col:first-child { margin-left: 0; } means you don't need to use class="last" anywhere. 
+	It works in all browsers since IE6.	
+	
+	A margin of 1.6% gives you about 20 pixels on a standard monitor, but feel free to go large to suit your content.	*/
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;	
+}
+.col:first-child { margin-left: 0; }
+
+/*	Solves floating problems, by forcing the section to self clear its children (aka the clear fix hack). 
+	This is good in Firefox 3.5+, Safari 4+, Chrome, Opera 9+ and IE 6+.	*/
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*	Specifies the width of the column. 
+	Using percentages means it's 100% fluid.	*/
+	
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	padding: 0px 5px 0px 5px;
+}
+
+	.span_1_of_2 {
+	display: block;
+	width: 49.2%;
+	border-style: solid;
+	border-color: gray;
+    	border-width: 1px;
+	padding: 0px 5px 0px 5px;
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GRID OF SIX  */
+.span_6_of_6 {
+	width: 100%;
+}
+
+.span_5_of_6 {
+  	width: 83.06%;
+}
+
+.span_4_of_6 {
+  	width: 66.13%;
+}
+
+.span_3_of_6 {
+  	width: 49.2%;
+}
+
+.span_2_of_6 {
+  	width: 32.26%;
+}
+
+.span_1_of_6 {
+  	width: 15.33%;
+}
+
+/*	As soon as the screen size gets less than 480 pixels the columns stack and the margins disappear.	*/
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+	.span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; }
+}
+
+
+
