@@ -20,7 +20,7 @@ setInterval(function() {
 	//WTemp = Math.floor((Math.random() * 2) + 29);
 	WTemp = 28.5;
 	RH = Math.floor((Math.random() * 2) + 64);
-	FR = Math.floor((Math.random() * 8) + 104);
+	FR = Math.floor((Math.random() * 16) + 104);
 	//DO2 = (Math.random() * (7.1 - 6.9) + 6.9).toFixed(1);
 	DO2 = 6.8;
 	//PH = (Math.random() * (7.1 - 6.9) + 6.9).toFixed(1);	
