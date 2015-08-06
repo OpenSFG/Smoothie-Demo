@@ -136,7 +136,7 @@
 					</div>
 				</div>
 				<footer class="group">			
-					<p>Creative Commons Attribution-ShareAlike 3.0 License &copy; 2015 <a href="http://opensfg.org" style="text-decoration: none">OpenSFG Initiative</a></p>
+					<p>Creative Commons Attribution-ShareAlike 3.0 License &copy; 2015 <a href="http://opensfg.org" style="text-decoration: none">OpenSFG</a></p>
 				</footer>
 			</div>
 		</div><!-- /.maincontentcontainer -->		
